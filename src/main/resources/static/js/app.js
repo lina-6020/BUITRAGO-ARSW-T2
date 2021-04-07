@@ -20,15 +20,14 @@ var app = (function () {
         });
     }
 
-    function llenarDatos(informacion) {
-        var datos = JSON.parse(informacion);
+    function llenarDatos(datos) {
         if (datos == null){
             return new Error("No se encontro informacion de la ciudad");
         }
-
+        
         document.getElementById("tiempo").innerHTML = "Tiempo: "+datos.weather[0].main;
         document.getElementById("maxima").innerHTML = "Temperatura maxima: "+datos.main.temp_max + " °K";
-        document.getElementById("minima").innerHTML = "Temperatua minima: "+datos.main.temp_min +" °K";
+        document.getElementById("minima").innerHTML = "Temperatura minima: "+datos.main.temp_min +" °K";
         document.getElementById("cielo").innerHTML = "Nubosidad: "+datos.clouds.all +"%";
         document.getElementById("velViento").innerHTML = "Velocidad del viento: "+datos.wind.speed +" Km/H";
         latitud = datos.coord.lat;

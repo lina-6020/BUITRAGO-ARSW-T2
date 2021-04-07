@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
+/**Esta clase es la encargada de conectarse con el api**/
 
 @Component("httpConnectionService")
 public class HttpConnectionService implements IHttpConnectionService{

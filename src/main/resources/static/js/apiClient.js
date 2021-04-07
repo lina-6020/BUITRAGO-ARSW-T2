@@ -2,7 +2,7 @@
 apiClient = (function () {
 
     return {
-        getCityByName : function(ciudad ,callback){
+        getDatos : function(ciudad ,callback){
             var promise = $.ajax({
                 url: "/Ciudades/"+ciudad,
                 type: 'GET',
