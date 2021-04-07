@@ -1,8 +1,31 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
+# Lina Buitrago Parcial-T2
 
 ### _Despliegue en HEROKU_ 📦
 
-[![ProjectDesign](https://www.herokucdn.com/deploy/button.png)](https://buitrago-arsw-t2.herokuapp.com/)
+[![ParcialT2](https://www.herokucdn.com/deploy/button.png)](https://buitrago-arsw-t2.herokuapp.com/)
+
+### Diseño
+La aplicación esta diseñada para que por medio del buscador con solo ingresar la ciudad se obtengan todos los datos de la misma como:
+* Tiempo 
+* Temperatura 
+* Estado del Cielo 
+* Velocidad del Tiempo 
+
+_Estructuralmente_
+
+La aplicación empieza en index.html que se conecta con el back por medio de un appiClient , dicho api client no solo conecta sino que tambien trae todos los datos necesarios para hacer la consulta y mostrarla en pantalls
+
+
+
+### Ejecución
+Se hace por medio del comando 
+_mvn spring-boot:run_
+
+### Extensión 
+
+Para extender el proyecto y asignarle nuevas funcionalidades basta con agregar los metodos a los servicios del backend y las funciones necesarias al appiClient
+
 
 ## Preparación para el Parcial
 
